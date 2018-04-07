@@ -18,6 +18,13 @@
 
     <dependencies>
 
+        <!-- Spring MVC support -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        
     </dependencies>
 
 </project>
