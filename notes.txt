@@ -1,0 +1,8 @@
+Spring Security dependencies:
+    1. spring-security-web
+    2. spring-security-config
+
+** Spring Security & Spring Framework can have different versions
+   (separate project)
+
+=> Need to find a compatatible versions between them
