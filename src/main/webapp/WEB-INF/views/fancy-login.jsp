@@ -8,7 +8,8 @@
 
         <title>Login Page</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Reference Bootstrap files -->
         <link rel="stylesheet"
@@ -36,9 +37,10 @@
                     <div style="padding-top: 30px" class="panel-body">
 
                         <!-- Login Form -->
-                        <form:form action="${pageContext.request.contextPath}/authenticateTheUser"
-                                   method="POST"
-                                   class="form-horizontal">
+                        <form:form
+                                action="${pageContext.request.contextPath}/authenticateTheUser"
+                                method="POST"
+                                class="form-horizontal">
 
                             <!-- Place for messages: error, alert etc ... -->
                             <div class="form-group">
@@ -64,23 +66,33 @@
                             </div>
 
                             <!-- User name -->
-                            <div style="margin-bottom: 25px" class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <div style="margin-bottom: 25px"
+                                 class="input-group">
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-user"></i></span>
 
-                                <input type="text" name="username" placeholder="username" class="form-control">
+                                <input type="text" name="username"
+                                       placeholder="username"
+                                       class="form-control">
                             </div>
 
                             <!-- Password -->
-                            <div style="margin-bottom: 25px" class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <div style="margin-bottom: 25px"
+                                 class="input-group">
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-lock"></i></span>
 
-                                <input type="password" name="password" placeholder="password" class="form-control">
+                                <input type="password" name="password"
+                                       placeholder="password"
+                                       class="form-control">
                             </div>
 
                             <!-- Login/Submit Button -->
                             <div style="margin-top: 10px" class="form-group">
                                 <div class="col-sm-6 controls">
-                                    <button type="submit" class="btn btn-success">Login</button>
+                                    <button type="submit"
+                                            class="btn btn-success">Login
+                                    </button>
                                 </div>
                             </div>
 
@@ -89,6 +101,14 @@
                             <%--name="${_csrf.parameterName}"--%>
                             <%--value="${_csrf.token}">--%>
 
+                            <%--Register New User button--%>
+                            <div>
+                                <a href="${pageContext.request.contextPath}/register/showRegistrationForm"
+                                   class="btn btn-primary"
+                                   role="button" aria-pressed="true">
+                                    Register New User
+                                </a>
+                            </div>
                         </form:form>
 
                     </div>
