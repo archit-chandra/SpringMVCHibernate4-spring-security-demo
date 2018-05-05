@@ -1,4 +1,4 @@
-package com.gemalto.springsecurity.demo.config.user;
+package com.gemalto.springsecurity.demo.user;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
